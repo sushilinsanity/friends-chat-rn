@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "friendschat",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authfriendschat8ee4e731",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
